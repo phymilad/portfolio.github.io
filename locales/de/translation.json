@@ -1,0 +1,14 @@
+{
+  "greeting": "Hallo, ich bin",
+  "name": "Milad Mohammadi",
+  "role": "Ich entwickle Webanwendungen",
+  "description": "Ich bin ein Softwareentwickler, der sich auf die Entwicklung (und gelegentlich das Design) außergewöhnlicher digitaler Erlebnisse spezialisiert hat. Derzeit konzentriere ich mich auf die Entwicklung zugänglicher, menschenzentrierter Produkte bei",
+  "cta": "Schau dir meinen Kurs an!",
+  "nav": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "work": "Projekte",
+    "contact": "Kontakt",
+    "resume": "Lebenslauf"
+  }
+} 
