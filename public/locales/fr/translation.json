@@ -1,0 +1,14 @@
+{
+  "greeting": "Bonjour, je suis",
+  "name": "Milad Mohammadi",
+  "role": "Je crée des solutions web",
+  "description": "Je suis un ingénieur logiciel spécialisé dans la création (et parfois la conception) d'expériences numériques exceptionnelles. Actuellement, je me concentre sur la création de produits accessibles et centrés sur l'humain chez",
+  "cta": "Découvrez mon cours !",
+  "nav": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "work": "Travail",
+    "contact": "Contact",
+    "resume": "CV"
+  }
+} 

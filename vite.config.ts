@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   base: '/portfolio.github.io/', // Replace 'portfolio.github.io' with your repo name
   plugins: [react()],
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
+  publicDir: 'public', // Make sure this is set
 });

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import { ThemeProvider } from './context/ThemeContext';
+import './i18n/config';
 
 const App: React.FC = () => {
   return (

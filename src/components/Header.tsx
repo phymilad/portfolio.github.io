@@ -1,14 +1,17 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
+  const { t } = useTranslation();
   
   const navItems = [
-    { number: '01.', text: 'About', href: '#about' },
-    { number: '02.', text: 'Experience', href: '#experience' },
-    { number: '03.', text: 'Work', href: '#work' },
-    { number: '04.', text: 'Contact', href: '#contact' },
+    { number: '01.', text: t('nav.about'), href: '#about' },
+    { number: '02.', text: t('nav.experience'), href: '#experience' },
+    { number: '03.', text: t('nav.work'), href: '#work' },
+    { number: '04.', text: t('nav.contact'), href: '#contact' },
   ];
 
   return (
@@ -24,6 +27,7 @@ const Header: React.FC = () => {
 
           {/* Navigation */}
           <nav className="flex items-center gap-8">
+            <LanguageSwitcher />
             <button
               onClick={toggleTheme}
               className="text-light-text dark:text-slate hover:text-light-heading dark:hover:text-green p-2 rounded-full hover:bg-green/10 transition-colors"
@@ -48,7 +52,7 @@ const Header: React.FC = () => {
                   className="px-4 py-2 border border-green text-green rounded font-mono text-[13px]
                            hover:bg-green/10 transition-colors"
                 >
-                  Resume
+                  {t('nav.resume')}
                 </a>
               </li>
             </ul>
